@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic Tac Toe</title>
+        <style>
+            table {
+                border-collapse: collapse;
+            }
+            td {
+                border: 1px solid black;
+                width: 150px;
+                height: 150px;
+                font-size: 30px;
+                text-align: center;
+            }
+            td > a {
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        {% block body %}
+        {% endblock %}
+        <div>
+                <a href="{{ url_for('reset') }}">Reset board</a><br>
+                <a href="{{ url_for('compmove') }}">Let Computer Make Move</a><br>
+        </div>
+
+    </body>
+</html>
